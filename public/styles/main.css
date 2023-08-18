@@ -1,0 +1,54 @@
+body{
+    background-color: #352F44;
+    text-align: center;
+    color: white;
+}
+
+.start-part {
+    margin-top: 50px;
+    background-image: url("images/fresh-cocktails-with-ice-lemon-lime-fruits-generative-ai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-bottom: 0;
+    
+}
+
+.h1-text{
+    margin-top: 240px;
+}
+#h1-enjoy{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 4rem;
+}
+#marketing{
+    margin-top: 150px;
+    font-family: 'Raleway', sans-serif;
+}
+#cards{
+    margin-top: 150px;
+}
+#img-size{
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+}
+#h1-cards{
+    font-family: 'Ubuntu Mono', monospace;
+}
+.card-font{
+    font-family: 'Raleway', sans-serif;
+}
+.upper-section-card{
+    font-family: 'Ubuntu Mono', monospace;
+    background-image: url("images/refreshing-mojito-with-lime-fresh-fruit-generated-by-ai.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+#forms{
+    margin-top: 100px;
+}
+

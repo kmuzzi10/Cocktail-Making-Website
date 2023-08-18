@@ -1,0 +1,20 @@
+<section id="forms">
+    <div class="container form-area">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 style="font-family: 'Ubuntu Mono', monospace;">Here Are Your Random Cocktails Recipies 🚀</h1>
+                <form style="margin-top: 10px;" id="myForm" method="post">
+                    <div class="form-floating mb-3">
+                        <textarea style="font-family: Georgia, 'Times New Roman', Times, serif;" class="form-control"
+                            placeholder="Leave a comment here" id="floatingTextarea2Disabled" style="height: 100px"
+                            disabled><% if(locals.cocktail){ %><%=" "+ cocktail ? cocktail.idDrink + " -- Drink || " + cocktail.strDrink + " -- Cocktail Glass|| " + cocktail.strGlass + " -- Cocktail Recipie|| " + cocktail.strInstructions : "" %><% }else{%>Click on get recipie button to get recipie of cocktail🍹<% } %>
+                        </textarea>
+                        <label for="floatingTextarea2Disabled"></label>
+                        <input style="margin-top: 10px;width: 150px;" class="btn btn-outline-light btn-lg" id="get"
+                            type="submit" value="GET RECIPIE" formaction="/get-cocktail">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
