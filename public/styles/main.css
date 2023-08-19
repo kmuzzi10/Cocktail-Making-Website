@@ -38,6 +38,9 @@ body{
 }
 .card-font{
     font-family: 'Raleway', sans-serif;
+    background-image: url("images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .upper-section-card{
     font-family: 'Ubuntu Mono', monospace;
@@ -51,4 +54,24 @@ body{
 #forms{
     margin-top: 100px;
 }
-
+#forms2{
+    margin-top: 100px;
+}
+.afterForms{
+    margin-top: 100px;
+}
+.cocktail img {
+    max-width: 200px; 
+    height: auto; 
+}
+.cocktail p {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 16px; 
+    color: #fff; 
+}
+.contact-page{
+    background-image: url("images/contact-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 300px;
+}

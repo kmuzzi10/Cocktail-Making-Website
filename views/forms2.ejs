@@ -1,0 +1,62 @@
+<section id="forms2">
+    <div class="container form-area">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 style="font-family: 'Ubuntu Mono', monospace;">Here Are Your All Cocktails Recipes Search By Type 🚀
+                </h1>
+                <form style="margin-top: 10px;" id="cocktailByTypeForm" method="post" action="/get-cocktail-by-name">
+                    <label for="type">Select Cocktail Type:</label>
+                    <select name="type" id="type">
+                        <option value="cocktail">Cocktail</option>
+                        <option value="margarita">Margarita</option>
+                        <option value="cola">Cola</option>
+                    </select>
+                    <input style="margin-top: 10px;width: 180px;" class="btn btn-outline-light btn-lg" id="get"
+                        type="submit" value="GET COCKTAILS">
+                </form>
+                <div class="cocktail-list">
+                    <% if (cocktailList) { %>
+                        <% if (Array.isArray(cocktailList)) { %>
+                            <% for (const drink of cocktailList) { %>
+                                <div class="cocktail">
+                                    <p>
+                                        <%= drink.idDrink %> -- Drink
+                                    </p>
+                                    <p>
+                                        <%= drink.strDrink %> -- Cocktail Glass
+                                    </p>
+                                    <p>
+                                        <%= drink.strGlass %> -- Cocktail Recipe
+                                    </p>
+                                    <p>
+                                        <%= drink.strInstructions %>
+                                    </p>
+                                    <img src="<%= drink.strDrinkThumb %>" alt="<%= drink.strDrink %>" />
+                                </div>
+                            <% } %>
+                        <% } else { %>
+                            <div class="cocktail">
+                                <p>
+                                    <%= cocktailList.idDrink %> -- Drink
+                                </p>
+                                <p>
+                                    <%= cocktailList.strDrink %> -- Cocktail Glass
+                                </p>
+                                <p>
+                                    <%= cocktailList.strGlass %> -- Cocktail Recipe
+                                </p>
+                                <p>
+                                    <%= cocktailList.strInstructions %>
+                                </p>
+                                <img src="<%= cocktailList.strDrinkThumb %>" alt="<%= cocktailList.strDrink %>" />
+                            </div>
+                        <% } %>
+                    <% } else { %>
+                        <p>Click on the "GET COCKTAILS" button to get all cocktail recipes. 🍹</p>
+                    <% } %>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

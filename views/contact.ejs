@@ -1,0 +1,66 @@
+<%- include("header.ejs") %>
+
+    <body>
+        <%- include("navbar.ejs") %>
+
+
+
+
+
+
+            
+            <section style="margin-top: 100px;" id="contact-heading">
+                <div class="fluid-container contact-page ">
+                    <div class="row">
+                        
+                        <div style="margin-top: 200px;" class="col-lg-12 col-md-12 col-sm-12 ">
+                            <h1 style="font-family: 'Ubuntu Mono', monospace;">Contact Us</h1>
+                            <h1 style="font-family: 'Ubuntu Mono', monospace;">Let's Stay Connected</h1>
+                            <p style="font-family: 'Raleway', sans-serif; ;">We're here to listen, collaborate, and
+                                answer your queries. Whether you
+                                have a question about a recipe, want to share your mixology journey, or
+                                simply want to connect, our team at Crafted Elixirs is eager to hear
+                                from you. Drop us a line, and let's keep the conversation flowing!
+
+                                Feel free to reach out to us through the provided contact form, or you
+                                can also connect with us on social media platforms. Your feedback,
+                                ideas, and thoughts are invaluable in helping us craft a better cocktail
+                                experience for you. Cheers to staying in touch!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+
+
+
+
+
+                            <form style="margin-top: 100px;" action="/submit-contact" method="post">
+                                <h1 style="font-family: 'Ubuntu Mono', monospace;">FeedBack</h1>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comments" class="form-label">Comments</label>
+                                    <textarea class="form-control" id="comments" name="comments" rows="4"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-light">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </body>
+    <%- include("footer.ejs")%>
+
+        </html>

@@ -8,9 +8,11 @@
                 <%- include("marketing.ejs") %>
 
                     <%- include("card.ejs")%>
-                    <%- include("forms.ejs")%>
+                    <%- include("forms.ejs", { randomCocktail: randomCocktail }) %>
 
-
+                    <%- include("afterForms.ejs")%>
+                    <%- include("card2.ejs")%>
+                    <%- include("forms2.ejs", { cocktailList: cocktailList }) %>
 
                     
                       

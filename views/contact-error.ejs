@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Error</title>
+</head>
+<body>
+    <h1>Error Occurred</h1>
+    <p>There was an error while sending your message. Please try again later.</p>
+    <% if (error) { %>
+        <p>Error details: <%= error.message %></p>
+    <% } %>
+    <a href="./index.ejs">Go back to Home</a>
+</body>
+</html>
