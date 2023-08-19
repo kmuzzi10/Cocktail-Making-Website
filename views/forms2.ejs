@@ -18,24 +18,30 @@
                     <% if (cocktailList) { %>
                         <% if (Array.isArray(cocktailList)) { %>
                             <% for (const drink of cocktailList) { %>
-                                <div class="cocktail">
+                                <div style="margin-top: 50px;" class="cocktail">
                                     <p>
-                                        <%= drink.idDrink %> -- Drink
+                                    DrinkID || <%= drink.idDrink %> 
                                     </p>
                                     <p>
-                                        <%= drink.strDrink %> -- Cocktail Glass
+                                    Drink Name ||   <%= drink.strDrink %> 
                                     </p>
                                     <p>
-                                        <%= drink.strGlass %> -- Cocktail Recipe
+                                      Drink Glass ||  <%= drink.strGlass %> 
                                     </p>
                                     <p>
-                                        <%= drink.strInstructions %>
+                                        Alcoholic or Non-Alcoholic ||  <%= drink.strAlcoholic %> 
+                                    </p>
+                                    <p>
+                                        Date Of Modification ||  <%= drink.dateModified %>
+                                    </p>
+                                    <p>
+                                      Drink Recipie ||  <%= drink.strInstructions %>
                                     </p>
                                     <img src="<%= drink.strDrinkThumb %>" alt="<%= drink.strDrink %>" />
                                 </div>
                             <% } %>
                         <% } else { %>
-                            <div class="cocktail">
+                            <div style="margin-top: 50px;" class="cocktail">
                                 <p>
                                     <%= cocktailList.idDrink %> -- Drink
                                 </p>

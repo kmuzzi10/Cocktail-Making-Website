@@ -15,16 +15,22 @@
                     <% if (randomCocktail) { %>
                         <div class="cocktail">
                             <p>
-                                <%= randomCocktail.idDrink %> -- Drink
+                                DrinkID ||   <%= randomCocktail.idDrink %> 
                             </p>
                             <p>
-                                <%= randomCocktail.strDrink %> -- Cocktail Glass
+                                Drink Name ||  <%= randomCocktail.strDrink %> 
                             </p>
                             <p>
-                                <%= randomCocktail.strGlass %> -- Cocktail Recipe
+                                Cocktail Drink Glass ||   <%= randomCocktail.strGlass %>
                             </p>
                             <p>
-                                <%= randomCocktail.strInstructions %>
+                                Alcoholic or Non-Alcoholic ||  <%= randomCocktail.strAlcoholic %> 
+                            </p>
+                            <p>
+                                Date Of Modification ||  <%= randomCocktail.dateModified %>
+                            </p>
+                            <p>
+                                Cocktail Recipie ||  <%= randomCocktail.strInstructions %> 
                             </p>
                             <img src="<%= randomCocktail.strDrinkThumb %>" alt="<%= randomCocktail.strDrink %>" />
                         </div>
