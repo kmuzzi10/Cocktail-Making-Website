@@ -1,29 +1,36 @@
 <%- include("header.ejs") %>
+    
 
     <body>
-        <%- include("navbar.ejs") %>
+        
+            <%- include("navbar.ejs") %>
 
-            <%- include("afterNav.ejs") %>
+                <%- include("afterNav.ejs") %>
 
-                <%- include("marketing.ejs") %>
+                    <%- include("marketing.ejs") %>
 
-                    <%- include("card.ejs")%>
-                    <%- include("forms.ejs", { randomCocktail: randomCocktail }) %>
+                        <%- include("card.ejs")%>
 
-                    <%- include("afterForms.ejs")%>
-                    <%- include("card2.ejs")%>
-                    <%- include("forms2.ejs", { cocktailList: cocktailList }) %>
+                            <%- include("forms.ejs", { randomCocktail: randomCocktail }) %>
 
-                    
-                      
+                                <%- include("afterForms.ejs")%>
 
 
+                                    <%- include("card2.ejs")%>
 
 
-                        <script
-                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-                        <script src="https://kit.fontawesome.com/76c721963f.js" crossorigin="anonymous"></script>
+                                        <%- include("forms2.ejs", { cocktailList: cocktailList }) %>
+
+
+
+        
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/76c721963f.js" crossorigin="anonymous"></script>
     </body>
     <%- include("footer.ejs") %>
+
 
         </html>
